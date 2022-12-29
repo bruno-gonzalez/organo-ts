@@ -19,11 +19,12 @@ const Time = (props: TimeProps) => {
          <div className='colaboradores'>
             {props.colaboradores.map(colaborador => 
                <Colaborador 
-                  key={props.nome} 
+                  key={colaborador.nome} 
                   nome={colaborador.nome} 
                   cargo={colaborador.cargo} 
                   imagem={colaborador.imagem}
                   cabecalhoFundo={props.corPrimaria}
+                  data={colaborador.data}
                />)}
          </div>
       </section>
