@@ -1,0 +1,30 @@
+.footer{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background: url("/public/imagens/fundo.png") no-repeat;
+   background-color: #6278F7;
+   color: white;
+   padding: 2em;
+}
+
+.footer .lista__redes-sociais{
+   width: 150px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer h6{
+   font-size: 1.2em;
+}
+
+@media screen and (max-width: 500px) {
+   .footer{
+      flex-flow: column;
+   }
+
+   .footer .lista__redes-sociais,
+   .footer h6{
+      padding: 1em 0;
+   }
+}
